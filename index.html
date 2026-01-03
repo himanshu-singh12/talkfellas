@@ -6,96 +6,343 @@
     <title>TalkFellas - Professional Conversation Support BPO</title>
     <meta name="description" content="TalkFellas - A professional conversation-support BPO focused on increasing customer talk-time through structured empathy, active listening, and high-quality human engagement.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-brand-text">TalkFellas</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#services" class="nav-link">
+                    <i class="fas fa-cogs"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#careers" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Careers</span>
+                </a>
+                <a href="#lead" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <a href="#mission" class="nav-link">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Mission</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="hero">
-        <div class="container">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Professional team collaboration" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i>
+                <span>Enterprise-Grade BPO Solutions</span>
+            </div>
             <h1>TalkFellas</h1>
             <p class="hero-subtitle">A professional conversation-support BPO focused on increasing customer talk-time through structured empathy, active listening, and high-quality human engagement.</p>
-            <a href="#lead" class="cta">Request a Consultation</a>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+            </div>
+            <a href="#lead" class="cta">
+                <i class="fas fa-calendar-check"></i>
+                Request a Consultation
+            </a>
         </div>
     </header>
 
     <!-- About -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
-            <h2>About TalkFellas</h2>
-            <p class="subtitle">TalkFellas operates as a specialized communication and support services provider. We help businesses improve customer engagement, retention, and satisfaction by enabling meaningful, emotionally intelligent conversations.</p>
+            <div class="section-header">
+                <div class="section-badge">About Us</div>
+                <h2>About TalkFellas</h2>
+                <p class="subtitle">TalkFellas operates as a specialized communication and support services provider. We help businesses improve customer engagement, retention, and satisfaction by enabling meaningful, emotionally intelligent conversations.</p>
+            </div>
             
-            <div class="grid grid-3">
-                <div class="card">
-                    <h3>Talk-Time Optimization</h3>
-                    <p>We design and manage conversations that naturally increase call duration while maintaining quality, compliance, and customer comfort.</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Professional team meeting" class="main-image">
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-users"></i>
+                            <h3>Expert Team</h3>
+                            <p>Dedicated professionals committed to excellence</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Emotionally Intelligent Support</h3>
-                    <p>Our trained associates help customers express themselves openly, creating trust-driven and value-focused interactions.</p>
-                </div>
-                <div class="card">
-                    <h3>Process-Driven Operations</h3>
-                    <p>Every interaction follows structured SOPs, QA frameworks, and performance benchmarks to ensure consistency and scalability.</p>
+                
+                <div class="grid grid-3">
+                    <div class="card feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Talk-Time Optimization</h3>
+                        <p>We design and manage conversations that naturally increase call duration while maintaining quality, compliance, and customer comfort.</p>
+                        <div class="card-footer">
+                            <span class="feature-highlight">+40% Average Talk Time</span>
+                        </div>
+                    </div>
+                    <div class="card feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Emotionally Intelligent Support</h3>
+                        <p>Our trained associates help customers express themselves openly, creating trust-driven and value-focused interactions.</p>
+                        <div class="card-footer">
+                            <span class="feature-highlight">95% Customer Satisfaction</span>
+                        </div>
+                    </div>
+                    <div class="card feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Process-Driven Operations</h3>
+                        <p>Every interaction follows structured SOPs, QA frameworks, and performance benchmarks to ensure consistency and scalability.</p>
+                        <div class="card-footer">
+                            <span class="feature-highlight">ISO 9001 Certified</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section class="services">
+    <section id="services" class="services">
+        <div class="services-background">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2084&q=80" alt="Business meeting" class="services-bg-image">
+            <div class="services-overlay"></div>
+        </div>
         <div class="container">
-            <h2>Our Services</h2>
-            <p class="subtitle">End-to-end conversation management solutions for global clients.</p>
+            <div class="section-header">
+                <div class="section-badge light">Our Services</div>
+                <h2>Our Services</h2>
+                <p class="subtitle">End-to-end conversation management solutions for global clients.</p>
+            </div>
             
             <div class="grid grid-3">
-                <div class="card">
-                    <h3>Customer Conversation Support</h3>
-                    <p>Inbound and outbound conversational support focused on emotional engagement and customer comfort.</p>
+                <div class="card service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Customer support representative">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Customer Conversation Support</h3>
+                        <p>Inbound and outbound conversational support focused on emotional engagement and customer comfort.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 24/7 Multilingual Support</li>
+                            <li><i class="fas fa-check"></i> Omnichannel Integration</li>
+                            <li><i class="fas fa-check"></i> Real-time Analytics</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Talk-Time Enhancement Programs</h3>
-                    <p>Customized strategies to increase average handling time without compromising service quality.</p>
+                <div class="card service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Business analytics">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Talk-Time Enhancement Programs</h3>
+                        <p>Customized strategies to increase average handling time without compromising service quality.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check"></i> Custom KPI Tracking</li>
+                            <li><i class="fas fa-check"></i> ROI Measurement</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Agent Training & QA</h3>
-                    <p>Comprehensive training in empathy, communication psychology, and continuous quality monitoring.</p>
+                <div class="card service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Training session">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Agent Training & QA</h3>
+                        <p>Comprehensive training in empathy, communication psychology, and continuous quality monitoring.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Certified Training Programs</li>
+                            <li><i class="fas fa-check"></i> Quality Assurance</li>
+                            <li><i class="fas fa-check"></i> Continuous Development</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Careers -->
-    <section class="careers">
+    <section id="careers" class="careers">
         <div class="container">
-            <h2>Careers at TalkFellas</h2>
-            <p class="subtitle">Join a growing organization that values communication skills, emotional intelligence, and professional growth.</p>
+            <div class="section-header">
+                <div class="section-badge">Join Our Team</div>
+                <h2>Careers at TalkFellas</h2>
+                <p class="subtitle">Join a growing organization that values communication skills, emotional intelligence, and professional growth.</p>
+            </div>
             
-            <div class="card career-card">
-                <p>We are always looking for confident communicators, customer support associates, quality analysts, and team leaders with a passion for meaningful conversations.</p>
-                <p><strong>Email your resume:</strong> <a href="mailto:careers@talkfellas.com">careers@talkfellas.com</a></p>
+            <div class="careers-content">
+                <div class="careers-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Team collaboration">
+                </div>
+                <div class="careers-info">
+                    <div class="card career-card">
+                        <div class="career-benefits">
+                            <h3>Why Work With Us?</h3>
+                            <div class="benefits-grid">
+                                <div class="benefit">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Competitive Packages</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Continuous Learning</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-users"></i>
+                                    <span>Collaborative Culture</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Career Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>We are always looking for confident communicators, customer support associates, quality analysts, and team leaders with a passion for meaningful conversations.</p>
+                        <div class="career-cta">
+                            <p><strong>Ready to join our team?</strong></p>
+                            <a href="mailto:careers@talkfellas.com" class="cta secondary">
+                                <i class="fas fa-envelope"></i>
+                                Send Your Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Lead Capture -->
     <section id="lead" class="lead-capture">
+        <div class="lead-background">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" alt="Business consultation" class="lead-bg-image">
+            <div class="lead-overlay"></div>
+        </div>
         <div class="container">
-            <h2>Contact & Business Enquiries</h2>
-            <p class="subtitle">Looking for a reliable conversation-support partner? Connect with us using the link below.</p>
+            <div class="section-header">
+                <div class="section-badge light">Get Started</div>
+                <h2>Contact & Business Enquiries</h2>
+                <p class="subtitle">Looking for a reliable conversation-support partner? Connect with us using the link below.</p>
+            </div>
             
-            <div class="card contact-card">
-                <p>Click the link to share your business requirements with our team.</p>
-                <a href="mailto:contact@talkfellas.com?subject=Business Enquiry&body=Hello TalkFellas team,%0D%0A%0D%0AI would like to discuss my business requirements for conversation support services.%0D%0A%0D%0APlease contact me to schedule a consultation.%0D%0A%0D%0AThank you." class="cta">Open Business Enquiry Form</a>
-                <p class="response-time">Our team will respond within one business day.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Support</h4>
+                            <p>Available 24/7 for urgent enquiries</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Response</h4>
+                            <p>Within one business day</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Agra, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card contact-card">
+                    <h3>Start Your Journey</h3>
+                    <p>Click the link to share your business requirements with our team.</p>
+                    <a href="mailto:contact@talkfellas.com?subject=Business Enquiry&body=Hello TalkFellas team,%0D%0A%0D%0AI would like to discuss my business requirements for conversation support services.%0D%0A%0D%0APlease contact me to schedule a consultation.%0D%0A%0D%0AThank you." class="cta">
+                        <i class="fas fa-paper-plane"></i>
+                        Open Business Enquiry Form
+                    </a>
+                    <p class="response-time">
+                        <i class="fas fa-clock"></i>
+                        Our team will respond within one business day.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Mission -->
-    <section class="mission">
+    <section id="mission" class="mission">
         <div class="container">
-            <div class="highlight">
-                <h2>Our Mission</h2>
-                <p>To deliver structured, empathetic, and scalable conversation solutions that enhance customer experience while driving measurable business outcomes.</p>
+            <div class="mission-content">
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mission vision">
+                </div>
+                <div class="highlight">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2>Our Mission</h2>
+                    <p>To deliver structured, empathetic, and scalable conversation solutions that enhance customer experience while driving measurable business outcomes.</p>
+                    <div class="mission-values">
+                        <div class="value">
+                            <i class="fas fa-heart"></i>
+                            <span>Empathy</span>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Quality</span>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-rocket"></i>
+                            <span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -103,8 +350,53 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 TalkFellas. All rights reserved.</p>
-            <p>Agra, India | <a href="mailto:contact@talkfellas.com">contact@talkfellas.com</a></p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>TalkFellas</h3>
+                    <p>Professional conversation-support BPO delivering exceptional customer experiences through empathetic communication.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Customer Support</a></li>
+                            <li><a href="#services">Talk-Time Enhancement</a></li>
+                            <li><a href="#services">Agent Training</a></li>
+                            <li><a href="#services">Quality Assurance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#mission">Mission</a></li>
+                            <li><a href="#lead">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> contact@talkfellas.com</li>
+                            <li><i class="fas fa-briefcase"></i> careers@talkfellas.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Agra, India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TalkFellas. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
         </div>
     </footer>
 
